@@ -45,6 +45,8 @@ ansible-playbook -i /setup/hosts /setup/alarms.yml -c local
 
 /etc/init.d/apache2 start
 
+/etc/init.d/monasca-anomaly-engine start
+
 # Finally tail the api log as we need to have something running in the foreground
 echo -e "\n\n\n\n\nMonasca is up and running\n\tTailing the API log.\n"
 tail -f /var/log/monasca/api/monasca-api.log
