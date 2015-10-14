@@ -12,6 +12,3 @@ docker run -d -p 192.168.1.200:8080:8080 -p 0.0.0.0:80:80 --add-host=keystone:19
 Openstack keystone can then be configured using the machines IP as the monitoring service endpoint. Useful scripts at https://github.com/biirdy/monasca-keystone
 
 Monasca agents can then be set up using the machines IP as the monasca API URL. 
-
-# TODO 
-- Add monasca-anomaly https://github.com/biirdy/monasca-anomaly
